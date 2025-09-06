@@ -6,6 +6,3 @@ vim.o.shiftwidth = 2
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
-
-vim.cmd("colorscheme default")
-vim.cmd("highlight Normal ctermbg=none guibg=none")
