@@ -7,7 +7,15 @@ return {
 		"nvim-tree/nvim-web-devicons",
 	},
 	lazy = false,
-	config = function()
+  opts = {
+    filesystem = {
+      filtered_items = {
+        hide_gitignored = false,
+      },
+    },
+  },
+	config = function(_, opts)
+    require("neo-tree").setup(opts)
 		vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>", {})
 	end,
 }
