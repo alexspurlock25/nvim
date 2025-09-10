@@ -7,5 +7,7 @@ vim.opt.expandtab = true
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
-vim.cmd("colorscheme default")
-vim.cmd("highlight Normal ctermbg=none guibg=none")
+-- vim.cmd("colorscheme default")
+-- vim.cmd("highlight Normal ctermbg=none guibg=none")
+
+vim.keymap.set("i", "jj", "<Esc>", { noremap = true, silent = true })
